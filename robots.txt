@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://www.worldofmixologists.com/sitemap.xml
+Sitemap: https://spiryit.com/sitemap.xml
