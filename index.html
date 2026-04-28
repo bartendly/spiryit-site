@@ -149,8 +149,10 @@ details p{margin:0;padding:0 20px 18px;color:var(--muted);}
 .floating-wa{position:fixed;right:18px;bottom:18px;z-index:70;display:inline-flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;box-shadow:0 18px 45px rgba(37,211,102,.28);font-size:1.3rem;font-weight:900;}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease;}
 .reveal.visible{opacity:1;transform:none;}
+.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none;}
+.no-scrollbar::-webkit-scrollbar{display:none;}
 @media (max-width:1100px){.hero-grid{grid-template-columns:1fr;}.hero-visual{min-height:auto;}.hero-visual img{min-height:520px;}.cards{grid-template-columns:1fr 1fr;}.reasons{grid-template-columns:1fr 1fr;}.process{grid-template-columns:1fr 1fr;}.contact-grid{grid-template-columns:1fr;}.grid-two,.split{grid-template-columns:1fr;}.menu{display:none;}.nav-actions .desktop-only{display:none;}.mobile-toggle{display:inline-flex;align-items:center;justify-content:center;}}
-@media (max-width:720px){.container{width:min(100% - 28px,var(--max));}.nav{height:70px;}.hero{padding:56px 0 40px;}.hero-copy h1{font-size:3.2rem;}.hero-actions,.closing-actions,.footer-grid{display:grid;align-items:stretch;}.btn{width:100%;}.metrics,.cards,.reasons,.process,.form-grid{grid-template-columns:1fr;}.hero-visual{border-radius:24px;}.hero-visual img{min-height:430px;}.hero-visual-card{left:12px;right:12px;bottom:12px;padding:16px;border-radius:20px;}.visual-top{display:grid;}.section{padding:58px 0;}.panel,.contact-card,.form,.card,.reason,.step{padding:18px;}.image-panel{border-radius:24px;}.image-panel img{height:360px;}.footer-grid{text-align:center;}.logo-pill,.tag,.pill{width:100%;justify-content:center;}}
+@media (max-width:720px){.container{width:min(100% - 28px,var(--max));}.nav{height:70px;}.hero{padding:48px 0 34px;}.hero-grid{gap:22px;}.hero-copy h1{font-size:clamp(2.65rem,12vw,3.45rem);line-height:.92;}.hero-copy p{font-size:1rem;margin-bottom:20px;}.hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px;}.hero-actions .btn.secondary{grid-column:1/-1;}.btn{min-height:52px;padding:0 16px;font-size:.93rem;}.hero-pills,.logo-strip,.tags{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}.pill,.logo-pill,.tag{width:auto;min-height:44px;justify-content:center;text-align:center;padding:10px 12px;}.metrics{grid-template-columns:repeat(2,1fr);}.hero-visual{border-radius:24px;}.hero-visual img{min-height:430px;}.hero-visual-card{left:12px;right:12px;bottom:12px;padding:16px;border-radius:20px;}.visual-top{display:grid;gap:10px;}.visual-title{font-size:1.12rem;}.section{padding:54px 0;}.section-title{font-size:clamp(2rem,9vw,2.55rem);}.section-subtitle{font-size:.98rem;}.cards,.reasons,.process{display:grid;grid-auto-flow:column;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;padding-bottom:6px;}.cards{grid-auto-columns:86%;}.reasons{grid-auto-columns:86%;}.process{grid-auto-columns:82%;}.card,.reason,.step{scroll-snap-align:start;padding:18px;}.grid-two{grid-template-columns:1fr;gap:14px;}.panel,.contact-card,.form{padding:18px;}.image-panel{border-radius:24px;}.image-panel img{height:320px;}.form-grid{grid-template-columns:1fr;}.contact-grid{gap:14px;}.closing-actions,.footer-grid{display:grid;align-items:stretch;}.footer-grid{text-align:center;}.floating-wa{display:none;}.no-scrollbar{scrollbar-width:none;}.cards,.reasons,.process{scrollbar-width:none;}.cards::-webkit-scrollbar,.reasons::-webkit-scrollbar,.process::-webkit-scrollbar{display:none;}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","@id":"https://spiryit.com/#organization","name":"SpiryIT","legalName":"SpiryIT SRL","url":"https://spiryit.com/","email":"martial@spiryit.com","telephone":"+32477344437","founder":{"@type":"Person","name":"Martial Delahaye","jobTitle":"Senior IT Project and Program Manager"},"sameAs":["https://www.linkedin.com/in/martial-d-79b0b72b/"]}
@@ -257,7 +259,7 @@ details p{margin:0;padding:0 20px 18px;color:var(--muted);}
     <div class="container">
       <h2 class="section-title">Clear services. Real delivery impact.</h2>
       <p class="section-subtitle">SpiryIT is designed for organizations that need senior delivery capacity, not vague consulting.</p>
-      <div class="cards">
+      <div class="cards no-scrollbar">
         <article class="card highlight">
           <p class="kicker">Core offer</p>
           <h3>Senior IT Project & Program Management</h3>
@@ -354,7 +356,7 @@ details p{margin:0;padding:0 20px 18px;color:var(--muted);}
           </div>
         </div>
       </div>
-      <div class="reasons">
+      <div class="reasons no-scrollbar">
         <div class="reason">
           <b>International and complex</b>
           <span>Projects spanning countries, vendors, stakeholders, dependencies and delivery pressure.</span>
@@ -425,7 +427,7 @@ details p{margin:0;padding:0 20px 18px;color:var(--muted);}
           <img src="/assets/spiryit-digital-delivery-screens.webp" alt="Premium visual of web and mobile application delivery with roadmap, UI screens and quality gates" width="1200" height="900" loading="lazy" />
         </div>
         <div>
-          <div class="process">
+          <div class="process no-scrollbar">
             <div class="step"><b>1</b><h3>Clarify</h3><p>Business goal, users, constraints, timeline and budget.</p></div>
             <div class="step"><b>2</b><h3>Specify</h3><p>MVP, backlog, features, acceptance criteria.</p></div>
             <div class="step"><b>3</b><h3>Estimate</h3><p>Options, effort, cost logic and delivery risks.</p></div>
@@ -441,7 +443,7 @@ details p{margin:0;padding:0 20px 18px;color:var(--muted);}
     <div class="container">
       <h2 class="section-title">Why clients bring SpiryIT in.</h2>
       <p class="section-subtitle">Simple: when the project is too important, too political, too distributed or too unclear for weak delivery management.</p>
-      <div class="reasons">
+      <div class="reasons no-scrollbar">
         <div class="reason"><b>The project is high-stakes</b><span>Large budget, high visibility, demanding stakeholders and no room for confusion.</span></div>
         <div class="reason"><b>Several suppliers must be coordinated</b><span>Internal teams, partners, vendors or offshore teams need one clear delivery rhythm.</span></div>
         <div class="reason"><b>A client-facing initiative needs senior leadership</b><span>Someone must represent delivery credibly to business leaders, customers and partners.</span></div>
@@ -565,10 +567,12 @@ if(mobileClose){mobileClose.addEventListener("click",closeMenu);}
 if(mobileMenu){mobileMenu.addEventListener("click",function(e){if(e.target===mobileMenu){closeMenu();}});}
 document.querySelectorAll(".mobile-link").forEach(function(link){link.addEventListener("click",closeMenu);});
 document.addEventListener("keydown",function(e){if(e.key==="Escape"){closeMenu();}});
+
 const proposalForm=document.getElementById("proposalForm");
 const formNote=document.getElementById("formNote");
 function val(v){return (v||"").trim();}
 if(proposalForm){proposalForm.addEventListener("submit",function(e){e.preventDefault();const data=new FormData(proposalForm);const name=val(data.get("name"));const company=val(data.get("company"));const email=val(data.get("email"));const type=val(data.get("type"));const timeline=val(data.get("timeline"));const budget=val(data.get("budget"));const message=val(data.get("message"));if(!name||!email||!type||!timeline||!budget||!message){formNote.textContent="Please complete all required fields.";return;}formNote.textContent="";const subject=encodeURIComponent("SpiryIT Proposal Request — "+type);const body=encodeURIComponent("Hi Martial,\n\nName: "+name+"\nCompany: "+(company||"-")+"\nEmail: "+email+"\n\nRequest type: "+type+"\nTimeline: "+timeline+"\nBudget / format: "+budget+"\n\nMessage:\n"+message+"\n\nBest regards,\n"+name);window.location.href="mailto:martial@spiryit.com?subject="+subject+"&body="+body;});}
+
 const observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target);}});},{threshold:.12});
 document.querySelectorAll(".reveal").forEach(function(el){observer.observe(el);});
 </script>
